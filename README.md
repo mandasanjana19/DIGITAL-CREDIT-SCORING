@@ -71,3 +71,14 @@ Add new models to App.py or retrain using the Jupyter notebook.
 Expand the dataset with real-world data for robust credit scoring.
 
 Integrate live Monte Carlo scenarios or SHAP explainability modules.
+
+<img width="568" height="801" alt="Screenshot 2025-11-12 234117" src="https://github.com/user-attachments/assets/257ea536-0eea-4692-b3d1-7dce02604e19" />
+
+
+<img width="598" height="797" alt="Screenshot 2025-11-12 234309" src="https://github.com/user-attachments/assets/633b3234-ca51-49dc-b4c6-8aedf6d59f16" />
+
+
+<img width="563" height="154" alt="Screenshot 2025-11-12 234422" src="https://github.com/user-attachments/assets/654f33ff-0dcc-4f7f-9bcb-feb775c0baef" />
+
+
+<img width="544" height="403" alt="Screenshot 2025-11-12 234509" src="https://github.com/user-attachments/assets/2cc914a8-5a89-41b0-8b91-b35bab12a193" />
