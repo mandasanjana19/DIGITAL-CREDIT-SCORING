@@ -1,92 +1,76 @@
 # DIGITAL-CREDIT-SCORING
 This repository contains a machine learning-powered platform for rural credit risk assessment and explainable credit scoring. The project is designed to improve financial inclusion for smallholder farmers and rural borrowers who often lack formal credit profiles.
 
+Rural Credit Scoring Dashboard – Trustworthy AI for Financial Inclusion
+📢 Project Overview
+This repository presents an end-to-end, machine learning-powered dashboard for rural credit risk assessment. The solution applies Trustworthy AI principles—fairness, transparency, explainability, robustness, and privacy—to predict repayment probability, assign a credit score, and explain lending risk for rural borrowers, especially farmers. Our goal is to help financial institutions make ethical, data-driven credit decisions that support inclusion for communities underserved by traditional methods.
 
-Rural Credit Scoring Dashboard – Trustworthy AI
-A practical, explainable, and fair AI solution for automated rural credit risk assessment.
-This repository provides a complete workflow from dataset preparation and advanced ML model training to an interactive credit scoring dashboard ready for end-user deployment.
+📦 Repository Structure
+App.py, app1.py — Main Streamlit dashboard/application files. Run either to launch the user interface.
 
-🌟 Project Overview
-Millions of rural borrowers and farmers in India struggle to access fair credit due to lack of formal financial history and opaque assessment methods. The aim of this project is to build a Trustworthy AI system that predicts rural loan repayment risk, gives a clear credit score, and explains its reasoning for each borrower.
+rural_credit_dataset_mixed.csv — Core dataset simulating real borrower profiles (demographics, agriculture, finance, digital behaviour).
 
-Key Features:
+xgb_model.pkl — Pre-trained XGBoost model for loan repayment prediction.
 
-Data-driven, real-world inspired rural credit scoring workflow
+scaler.pkl, column_transformer.pkl — Data transformation objects (scaling and encoding features for consistency).
 
-Interactive dashboard for lenders or researchers
+graphs_paper1.py, newplot.jpg — Visualisation code and sample output for use in reports or presentations.
 
-Model explanations: shows which features matter most (trust and fairness)
+Untitled.ipynb — Jupyter notebook for full exploratory data analysis, feature engineering, and model training.
 
-Built using state-of-the-art models (Logistic Regression, Random Forest, XGBoost)
+image.jpeg, image.jpg — Dashboard screenshots and demo visuals for documentation/README use.
 
-📁 Repository Contents
-App.py, app1.py – Main Python source files for the interactive Streamlit dashboard/application.
-
-rural_credit_dataset_mixed.csv – The full synthetic dataset of borrower profiles and loan status.
-
-xgb_model.pkl – Trained XGBoost model for loan risk prediction (ready to deploy).
-
-scaler.pkl, column_transformer.pkl – Saved preprocessing transformers for consistent feature scaling and encoding.
-
-graphs_paper1.py, newplot.jpg – Scripts and images for visualizations in reports/papers.
-
-Untitled.ipynb – Jupyter notebook for data exploration, modelling, and EDA.
-
-image.jpeg, image.jpg – Dashboard output screenshots for documentation or reference.
-
-⚙️ How to Deploy This Project
-Clone the repository
+🚀 How to Deploy and Use the Dashboard
+Clone the Repository
 
 bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
-Install dependencies
-Required packages:
+Install Required Python Packages
 
-streamlit
-
-pandas
-
-scikit-learn
-
-xgboost
-
-matplotlib
+You’ll need: streamlit, pandas, scikit-learn, xgboost, matplotlib
 
 bash
-pip install -r requirements.txt
-# or, to install individually:
 pip install streamlit pandas scikit-learn xgboost matplotlib
+Optionally, add a requirements.txt file for quick environment setup.
+
 Run the Dashboard
 
 bash
 streamlit run App.py
-The app will open in your browser.
+Visit the local URL provided (usually http://localhost:8501).
 
-Edit user profile fields and instantly see updated predictions and explanations.
+Enter sample borrower details in the sidebar to receive a credit score, repayment probability, and risk classification instantly.
 
-Explore the Code
+Analyze which factors influence the result via the feature importance graph.
 
-App.py or app1.py shows the logic for loading saved models, user input forms, and displaying risk metrics.
+Explore and Extend
 
-Untitled.ipynb provides data exploration, training pipeline, and reproducibility for experiments.
+Use the provided notebook (Untitled.ipynb) for custom data exploration, retraining, or model tweaking.
 
-ML models and processing transformers are loaded automatically.
+Replace or retrain models (xgb_model.pkl) to update prediction logic as needed.
 
-Customizing/Training
+Study included scripts and images for adapting the dashboard for your own presentation or paper.
 
-Use the Jupyter notebook to retrain ML models or add new features to the dataset.
+💡 Key Features
+Trustworthy AI: Demonstrates clear, interpretable risk assessment based on ethical AI standards.
 
-Replace trained models (xgb_model.pkl) if you want to use your own.
+Feature Importance: Users see why the model assigns a score—enabling transparency and trust.
 
-💡 Project Highlights
-Explainable AI: Dashboard not only predicts scores but shows why—feature importance plots make results easy to trust.
+Rural Focus: Accounts for agricultural context, digital behaviour, and economic diversity in lending risk.
 
-Trustworthy Workflow: Bias-safe, fair, with reproducible ML pipeline.
+Ready to Use: Pre-trained models and full dataset included—no wait time to test or demo.
 
-Rural Relevance: Factors in real farming features: land size, crop, digital activity, and more.
+👩‍💻 Example Use Case
+Input a Maharashtra farmer’s details, land size, income, crop, loan requested, and see output: repayment probability, credit score, and risk category.
 
-🚀 Demo Use Case
-See the included screenshots for a sample Maharashtra farmer profile.
+The dashboard’s graph will highlight the most influential variables—e.g., land size and annual income.
 
-Review the credit risk output and the graph highlighting land size as a dominant positive factor.
+Use for research demos, bank testing, or comparative studies in financial AI.
+
+📈 Extending the Project
+Add new models to App.py or retrain using the Jupyter notebook.
+
+Expand the dataset with real-world data for robust credit scoring.
+
+Integrate live Monte Carlo scenarios or SHAP explainability modules.
