@@ -23,9 +23,6 @@ image.jpeg, image.jpg — Dashboard screenshots and demo visuals for documentati
 🚀 How to Deploy and Use the Dashboard
 Clone the Repository
 
-bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
 Install Required Python Packages
 
 You’ll need: streamlit, pandas, scikit-learn, xgboost, matplotlib
