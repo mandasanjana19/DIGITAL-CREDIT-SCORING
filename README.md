@@ -1,35 +1,45 @@
-# DIGITAL-CREDIT-SCORING
-This repository contains a machine learning-powered platform for rural credit risk assessment and explainable credit scoring. The project is designed to improve financial inclusion for smallholder farmers and rural borrowers who often lack formal credit profiles.
+🚀 DIGITAL-CREDIT-SCORING
+Machine Learning–Based Rural Credit Risk Assessment with Explainable AI
 
-Rural Credit Scoring Dashboard – Trustworthy AI for Financial Inclusion
+This repository contains a machine learning–powered platform for rural credit risk assessment and explainable credit scoring. The project focuses on improving financial inclusion for smallholder farmers and rural borrowers who often lack formal credit profiles.
+
+🌱 Rural Credit Scoring Dashboard – Trustworthy AI for Financial Inclusion
 📢 Project Overview
-This project presents a machine learning–based rural credit scoring system designed to improve financial inclusion by making credit decisions more accurate, transparent, and fair.
-We compared multiple classification models and integrated Explainable AI (SHAP) to help lenders understand why a borrower is classified as low or high risk.
-The system is deployed as a Streamlit web application to provide real-time, explainable credit predictions for rural lending scenarios.
+
+This project presents a machine learning–based rural credit scoring system designed to make lending decisions more accurate, transparent, and fair.
+Multiple models were compared, and Explainable AI (SHAP) was integrated to help lenders understand why a borrower is classified as low or high risk.
+
+The system is deployed as a Streamlit web application providing real-time, explainable credit predictions for rural lending.
 
 📦 Repository Structure
-App.py, app1.py — Main Streamlit dashboard/application files. Run either to launch the user interface.
 
-rural_credit_dataset_mixed.csv — Core dataset simulating real borrower profiles (demographics, agriculture, finance, digital behaviour).
+App.py, app1.py - Main Streamlit application files
 
-xgb_model.pkl — Pre-trained XGBoost model for loan repayment prediction.
+rural_credit_dataset_mixed.csv - Rural borrower dataset
 
-scaler.pkl, column_transformer.pkl — Data transformation objects (scaling and encoding features for consistency).
+xgb_model.pkl - Pre-trained XGBoost model
 
-graphs_paper1.py, newplot.jpg — Visualisation code and sample output for use in reports or presentations.
+scaler.pkl, column_transformer.pkl - Feature preprocessing objects
 
-Untitled.ipynb — Jupyter notebook for full exploratory data analysis, feature engineering, and model training.
+graphs_paper1.py - Visualization scripts
 
-image.jpeg, image.jpg — Dashboard screenshots and demo visuals for documentation/README use.
+newplot.jpg - Evaluation plots
+
+Untitled.ipynb - EDA, preprocessing & model training notebook
+
+image.jpeg, image.jpg - Dashboard screenshots
+
+screenshots
+
 🎯 Objectives
 
-Build an accurate credit risk prediction system for rural populations
+Build an accurate rural credit risk prediction system
 
 Compare traditional and ensemble ML models
 
 Improve model transparency using Explainable AI
 
-Support fair and responsible lending decisions
+Support fair and responsible lending
 
 🧠 Models Implemented
 
@@ -37,7 +47,7 @@ Logistic Regression
 
 Random Forest
 
-XGBoost (primary model)
+XGBoost (Primary Model) ✅
 
 ⚙️ Tech Stack
 
@@ -53,25 +63,25 @@ Techniques: Standard Scaling, One-Hot Encoding, GridSearchCV, Ensemble Learning,
 
 Custom-built rural borrower dataset
 
-Data split: 80% training / 20% testing
+Train-test split: 80% training / 20% testing
 
-Preprocessing steps:
+Preprocessing included:
 
 Handling missing values
 
-One-hot encoding for categorical features
+One-hot encoding of categorical features
 
-Standard scaling for numerical features
+Standard scaling of numerical features
 
 Fixed random seeds for reproducibility
 
 🔬 Experimental Setup
 
-Evaluated three classifiers: Logistic Regression, Random Forest, XGBoost
+Evaluated Logistic Regression, Random Forest, and XGBoost
 
-Applied hyperparameter tuning (GridSearchCV) for XGBoost
+Applied GridSearchCV hyperparameter tuning for XGBoost
 
-Performance evaluated using:
+Evaluation metrics:
 
 Accuracy
 
@@ -85,48 +95,53 @@ ROC-AUC
 
 Confusion Matrix
 
-🔍 Key Findings
+📊 Key Findings
 
-XGBoost improved accuracy by ~18% over Logistic Regression
+🚀 XGBoost improved accuracy by ~18% over Logistic Regression
 
-Achieved the highest ROC-AUC (0.89), indicating strong class separation
+📈 Achieved the highest ROC-AUC score of 0.89
 
-Reduced misclassification of risky borrowers
+🎯 Reduced misclassification of risky borrowers
 
-SHAP visualizations revealed top contributing features behind every decision
+🔍 SHAP revealed top contributing features behind predictions
 
 🧩 Explainable AI Integration (SHAP)
 
-Implemented SHAP values to interpret predictions
+Implemented SHAP values for interpretability
 
 Visualized:
 
-Feature importance
+Global feature importance
 
-Individual prediction explanations
+Individual borrower-level explanations
 
-Improved trust, transparency, and fairness in lending decisions
+Improved trust, transparency, and fairness in credit decisions.
 
 🌐 Deployment
 
-Built an interactive Streamlit web app
+Developed an interactive Streamlit web application.
 
 Features:
 
 Real-time credit risk prediction
 
-Probability-based output
+Probability-based outputs
 
 SHAP explanation plots
 
-User-friendly interface for non-technical lenders
+User-friendly interface for lenders
 
 📈 Extending the Project
-Add new models to App.py or retrain using the Jupyter notebook.
 
-Expand the dataset with real-world data for robust credit scoring.
+Add new models in App.py
 
-Integrate live Monte Carlo scenarios or SHAP explainability modules.
+Retrain models using the Jupyter notebook
+
+Expand dataset with real-world rural data
+
+Integrate advanced SHAP dashboards and simulations
+
+
 
 <img width="568" height="801" alt="Screenshot 2025-11-12 234117" src="https://github.com/user-attachments/assets/257ea536-0eea-4692-b3d1-7dce02604e19" />
 
