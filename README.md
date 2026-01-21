@@ -3,7 +3,9 @@ This repository contains a machine learning-powered platform for rural credit ri
 
 Rural Credit Scoring Dashboard – Trustworthy AI for Financial Inclusion
 📢 Project Overview
-This repository presents an end-to-end, machine learning-powered dashboard for rural credit risk assessment. The solution applies Trustworthy AI principles—fairness, transparency, explainability, robustness, and privacy—to predict repayment probability, assign a credit score, and explain lending risk for rural borrowers, especially farmers. Our goal is to help financial institutions make ethical, data-driven credit decisions that support inclusion for communities underserved by traditional methods.
+This project presents a machine learning–based rural credit scoring system designed to improve financial inclusion by making credit decisions more accurate, transparent, and fair.
+We compared multiple classification models and integrated Explainable AI (SHAP) to help lenders understand why a borrower is classified as low or high risk.
+The system is deployed as a Streamlit web application to provide real-time, explainable credit predictions for rural lending scenarios.
 
 📦 Repository Structure
 App.py, app1.py — Main Streamlit dashboard/application files. Run either to launch the user interface.
@@ -19,51 +21,105 @@ graphs_paper1.py, newplot.jpg — Visualisation code and sample output for use i
 Untitled.ipynb — Jupyter notebook for full exploratory data analysis, feature engineering, and model training.
 
 image.jpeg, image.jpg — Dashboard screenshots and demo visuals for documentation/README use.
+🎯 Objectives
 
-🚀 How to Deploy and Use the Dashboard
-Clone the Repository
+Build an accurate credit risk prediction system for rural populations
 
-Install Required Python Packages
+Compare traditional and ensemble ML models
 
-You’ll need: streamlit, pandas, scikit-learn, xgboost, matplotlib
+Improve model transparency using Explainable AI
 
-bash
-pip install streamlit pandas scikit-learn xgboost matplotlib
-Optionally, add a requirements.txt file for quick environment setup.
+Support fair and responsible lending decisions
 
-Run the Dashboard
+🧠 Models Implemented
 
-bash
-streamlit run App.py
-Visit the local URL provided (usually http://localhost:8501).
+Logistic Regression
 
-Enter sample borrower details in the sidebar to receive a credit score, repayment probability, and risk classification instantly.
+Random Forest
 
-Analyze which factors influence the result via the feature importance graph.
+XGBoost (primary model)
 
-Explore and Extend
+⚙️ Tech Stack
 
-Use the provided notebook (Untitled.ipynb) for custom data exploration, retraining, or model tweaking.
+Languages: Python
 
-Replace or retrain models (xgb_model.pkl) to update prediction logic as needed.
+Libraries: Scikit-learn, XGBoost, SHAP, Pandas, NumPy, Matplotlib
 
-Study included scripts and images for adapting the dashboard for your own presentation or paper.
+Web App: Streamlit
 
-💡 Key Features
-Trustworthy AI: Demonstrates clear, interpretable risk assessment based on ethical AI standards.
+Techniques: Standard Scaling, One-Hot Encoding, GridSearchCV, Ensemble Learning, Explainable AI
 
-Feature Importance: Users see why the model assigns a score—enabling transparency and trust.
+🗂️ Dataset & Preprocessing
 
-Rural Focus: Accounts for agricultural context, digital behaviour, and economic diversity in lending risk.
+Custom-built rural borrower dataset
 
-Ready to Use: Pre-trained models and full dataset included—no wait time to test or demo.
+Data split: 80% training / 20% testing
 
-👩‍💻 Example Use Case
-Input a Maharashtra farmer’s details, land size, income, crop, loan requested, and see output: repayment probability, credit score, and risk category.
+Preprocessing steps:
 
-The dashboard’s graph will highlight the most influential variables—e.g., land size and annual income.
+Handling missing values
 
-Use for research demos, bank testing, or comparative studies in financial AI.
+One-hot encoding for categorical features
+
+Standard scaling for numerical features
+
+Fixed random seeds for reproducibility
+
+🔬 Experimental Setup
+
+Evaluated three classifiers: Logistic Regression, Random Forest, XGBoost
+
+Applied hyperparameter tuning (GridSearchCV) for XGBoost
+
+Performance evaluated using:
+
+Accuracy
+
+Precision
+
+Recall
+
+F1-score
+
+ROC-AUC
+
+Confusion Matrix
+
+🔍 Key Findings
+
+XGBoost improved accuracy by ~18% over Logistic Regression
+
+Achieved the highest ROC-AUC (0.89), indicating strong class separation
+
+Reduced misclassification of risky borrowers
+
+SHAP visualizations revealed top contributing features behind every decision
+
+🧩 Explainable AI Integration (SHAP)
+
+Implemented SHAP values to interpret predictions
+
+Visualized:
+
+Feature importance
+
+Individual prediction explanations
+
+Improved trust, transparency, and fairness in lending decisions
+
+🌐 Deployment
+
+Built an interactive Streamlit web app
+
+Features:
+
+Real-time credit risk prediction
+
+Probability-based output
+
+SHAP explanation plots
+
+User-friendly interface for non-technical lenders
 
 📈 Extending the Project
 Add new models to App.py or retrain using the Jupyter notebook.
